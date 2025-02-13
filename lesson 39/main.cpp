@@ -1,19 +1,23 @@
 ﻿#include "util.h"
+#include "sort.h"
 #include <ctime>
 
-#define SIZE 20
+#define SIZE 10
 
-// это мощный комп
+
 int main() {
 	srand(time(NULL));
-	int array[SIZE];
-
+	int array[SIZE]/*{1 , 2, 3, 4, 5, 6, 7, 8, 9, 10};*/
+	/*int array[]{1, 2, 3, 4, 5, 6, 7, 8, 9};*/
 	init(array, SIZE, -20, 20);
 
-	cout << "Array: " << convert(array, SIZE) << endl;
+	cout << "Before Array: " << convert(array, SIZE) << endl;
+
+	/*bubble_sort(array, SIZE);*/
+	(array, SIZE);
+	cout << "After Array: " << convert(array, SIZE) << endl;
 
 	
-
 	return 0;
 }
 
