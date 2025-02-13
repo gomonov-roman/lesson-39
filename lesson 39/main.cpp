@@ -1,15 +1,18 @@
-#include <iostream>
-using namespace std;
+#include "util.h"
+#include <ctime>
+
+#define SIZE 20
+
+// это мощный комп
 int main() {
+	srand(time(NULL));
+	int array[SIZE];
 
+	init(array, SIZE, -20, 20);
 
-	int number;
-		cout << "Input   your number: ";
-		cin >> number;
- for (int i = 2; i <= number; i += 2) {
-	cout << i << " ";
-}
+	cout << "Array: " << convert(array, SIZE) << endl;
 
+	
 
 	return 0;
 }
