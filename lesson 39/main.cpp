@@ -1,9 +1,9 @@
-#include "util.h"
+п»ї#include "util.h"
 #include <ctime>
 
 #define SIZE 20
 
-// это мощный комп
+// СЌС‚Рѕ РјРѕС‰РЅС‹Р№ РєРѕРјРї
 int main() {
 	srand(time(NULL));
 	int array[SIZE];
